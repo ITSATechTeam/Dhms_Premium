@@ -1,0 +1,130 @@
+/* ── Section ──────────────────────────────────────────────── */
+.problem-section {
+  background:
+    radial-gradient(ellipse 50% 90% at 0% 50%, rgba(147, 197, 253, 0.45) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 90% at 100% 50%, rgba(147, 197, 253, 0.45) 0%, transparent 70%),
+    #f0f6ff;
+  padding: 90px 0 100px;
+}
+
+.problem-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+.problem-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.problem-eyebrow {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #2b67b0;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.problem-heading {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin: 0 0 24px;
+}
+
+.problem-subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.7;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+/* ── Grid ─────────────────────────────────────────────────── */
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* ── Card ─────────────────────────────────────────────────── */
+.problem-card {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(200, 220, 255, 0.6);
+  border-radius: 20px;
+  padding: 32px 28px;
+  backdrop-filter: blur(8px);
+}
+
+.problem-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #dbeafe;
+  border-radius: 10px;
+  color: #2b67b0;
+  margin-bottom: 20px;
+}
+
+.problem-icon-wrap svg {
+  width: 22px;
+  height: 22px;
+}
+
+.problem-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.4;
+  margin: 0 0 14px;
+}
+
+.problem-card-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .problem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .problem-header {
+    text-align: left;
+  }
+
+  .problem-heading {
+    font-size: 30px;
+  }
+
+  .problem-subtext {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-heading {
+    font-size: 24px;
+  }
+}

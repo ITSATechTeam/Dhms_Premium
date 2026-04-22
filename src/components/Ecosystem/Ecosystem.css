@@ -1,0 +1,111 @@
+/* ── Section ──────────────────────────────────────────────── */
+.ecosystem-section {
+  background: linear-gradient(160deg, #dde8f5 0%, #eaf0fa 35%, #f4f7fc 60%, #dde8f5 100%);
+  padding: 60px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.ecosystem-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+/* ── Heading ──────────────────────────────────────────────── */
+.ecosystem-heading {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.ecosystem-highlight {
+  color: #2b67b0;
+}
+
+/* ── Subtext ──────────────────────────────────────────────── */
+.ecosystem-subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* ── Image wrap ───────────────────────────────────────────── */
+.ecosystem-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  padding: 0 48px;
+}
+
+.ecosystem-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Orange line segments (behind image) ──────────────────── */
+.ecosystem-line {
+  position: absolute;
+  height: 2px;
+  background: #e85d1a;
+  z-index: 1;
+  pointer-events: none;
+  width: 42%;
+}
+
+.line-top-left {
+  left: 0;
+  top: 40%;
+}
+
+.line-top-right {
+  right: 0;
+  top: 35%;
+}
+
+.line-bottom-left {
+  left: 0;
+  top: 70%;
+}
+
+.line-bottom-right {
+  right: 0;
+  top: 65%;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .ecosystem-wrapper {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .ecosystem-heading {
+    font-size: 30px;
+  }
+
+  .ecosystem-subtext {
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .ecosystem-heading {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,101 @@
+/* ── Section ──────────────────────────────────────────────── */
+.cta-section {
+  background: rgba(0, 48, 91, 1);
+  padding: 90px 48px;
+}
+
+.cta-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ── Eyebrow ──────────────────────────────────────────────── */
+.cta-eyebrow {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.5px;
+}
+
+/* ── Heading ──────────────────────────────────────────────── */
+.cta-heading {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* ── Subtext ──────────────────────────────────────────────── */
+.cta-subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.75;
+  max-width: 700px;
+  margin: 0;
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+.cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 14px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.cta-btn:hover {
+  opacity: 0.85;
+}
+
+.cta-btn-outline {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.cta-btn-solid {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  color: #00305b;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .cta-wrapper {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .cta-heading {
+    font-size: 34px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

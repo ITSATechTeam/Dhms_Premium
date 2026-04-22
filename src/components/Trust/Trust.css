@@ -1,0 +1,168 @@
+/* ── Section ──────────────────────────────────────────────── */
+.trust-section {
+  background: #ffffff;
+  padding: 90px 0 100px;
+}
+
+.trust-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+.trust-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.trust-heading {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.trust-blue {
+  color: #2b67b0;
+}
+
+.trust-subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* ── Tabs ─────────────────────────────────────────────────── */
+.trust-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 56px;
+}
+
+.trust-tab {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 50px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.trust-tab:hover {
+  background: #f0f6ff;
+  border-color: #2b67b0;
+}
+
+/* ── Grid ─────────────────────────────────────────────────── */
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ── Card ─────────────────────────────────────────────────── */
+.trust-card {
+  border-radius: 24px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1.5px solid transparent;
+}
+
+.card-blue {
+  background: rgba(240, 247, 255, 1);
+  border-color: rgba(43, 103, 176, 1);
+}
+
+.card-blue .trust-icon-wrap {
+  color: #2b67b0;
+  background: #ffffff;
+}
+
+.card-pink {
+  background: rgba(255, 233, 248, 1);
+  border-color: rgba(181, 2, 128, 1);
+}
+
+.card-pink .trust-icon-wrap {
+  color: rgba(181, 2, 128, 1);
+  background: #ffffff;
+}
+
+.card-green {
+  background: rgba(229, 255, 241, 1);
+  border-color: rgba(0, 129, 5, 1);
+}
+
+.card-green .trust-icon-wrap {
+  color: rgba(0, 129, 5, 1);
+  background: #ffffff;
+}
+
+.trust-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+.trust-icon-wrap svg {
+  width: 24px;
+  height: 24px;
+}
+
+.trust-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.trust-card-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-header {
+    text-align: left;
+  }
+
+  .trust-heading {
+    font-size: 28px;
+  }
+
+  .trust-subtext {
+    margin: 0;
+  }
+
+  .trust-tabs {
+    justify-content: flex-start;
+  }
+}
