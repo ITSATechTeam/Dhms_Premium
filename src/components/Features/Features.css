@@ -1,7 +1,7 @@
 /* ── Section ──────────────────────────────────────────────── */
 .features-section {
   background: #ffffff;
-  padding: 80px 0 100px;
+  padding: 80px 0 0;
 }
 
 /* ── Top Header ───────────────────────────────────────────── */
@@ -43,32 +43,57 @@
 }
 
 /* ── Badge (number) ───────────────────────────────────────── */
-.features-badge-wrap {
-  position: relative;
-  display: inline-flex;
+.features-badge-num {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2b67b0;
+  background: #eaf1fb;
+  border-radius: 50px;
+  padding: 4px 12px;
+  display: inline-block;
+  width: fit-content;
+}
+
+/* ── Section header (badge + title + desc LEFT, image RIGHT) ── */
+.features-section-header {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.features-section-header--no-img {
+  grid-template-columns: 1fr;
+}
+
+.features-section-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.features-section-header-left .features-section-title {
+  margin: 0;
+}
+
+.features-section-header-left .features-section-desc {
+  margin: 0;
+}
+
+.features-section-header-right {
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
-  width: 64px;
-  height: 64px;
 }
 
-.features-rect-bg {
-  position: absolute;
-  inset: 0;
+.features-header-img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 16px;
   object-fit: cover;
-  border-radius: 12px;
-}
-
-.features-badge-num {
-  position: relative;
-  z-index: 1;
-  font-family: 'Unbounded', sans-serif;
-  font-size: 22px;
-  font-weight: 800;
-  color: #ffffff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 /* ── Section title & description ─────────────────────────── */
@@ -95,10 +120,10 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 700;
-  color: #2b67b0;
+  color: #0f172a;
   margin: 16px 0 32px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 /* ── Rows ─────────────────────────────────────────────────── */
@@ -108,10 +133,6 @@
   gap: 48px;
   align-items: center;
   margin-bottom: 60px;
-  padding: 36px;
-  border-radius: 20px;
-  background: #f8fafc;
-  border: 1px solid #e8f0fb;
 }
 
 .features-row:last-child {
@@ -173,7 +194,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 18px;
   counter-reset: roman-counter;
 }
 
@@ -183,9 +204,12 @@
   font-weight: 400;
   color: #374151;
   line-height: 1.6;
-  padding-left: 28px;
+  padding-left: 36px;
   position: relative;
   counter-increment: roman-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .features-roman-list li::before {
@@ -193,9 +217,89 @@
   position: absolute;
   left: 0;
   color: #2b67b0;
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 14px;
   top: 2px;
+}
+
+.features-roman-list li strong {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.4;
+}
+
+.features-roman-list li span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.65;
+}
+
+/* ── Bullet before subsection title ──────────────────────── */
+.features-subsection-title::before {
+  content: '• ';
+  color: #0f172a;
+}
+
+/* ── Single-click row bullet list ────────────────────────── */
+.features-single-click-bullets {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #374151;
+  line-height: 1.7;
+}
+
+.features-subsection-title--lg {
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+/* ── MITRE row: left text | right (image stacked above extra list) ── */
+.features-row--mitre {
+  align-items: start;
+}
+
+.features-right-col-split {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.features-roman-list--continue-6 {
+  counter-reset: roman-counter 5;
+}
+
+.features-roman-list--continue-9 {
+  counter-reset: roman-counter 8;
+}
+
+.features-roman-list--continue-11 {
+  counter-reset: roman-counter 10;
+}
+
+/* ── Bullet list inside MITRE description ─────────────────── */
+.features-mitre-bullets {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.7;
 }
 
 /* ── Responsive ───────────────────────────────────────────── */
@@ -224,7 +328,14 @@
   .features-row {
     grid-template-columns: 1fr;
     gap: 28px;
-    padding: 24px;
+  }
+
+  .features-section-header {
+    grid-template-columns: 1fr;
+  }
+
+  .features-section-header-right {
+    display: none;
   }
 
   .features-row-img-right .features-img-col:last-child {

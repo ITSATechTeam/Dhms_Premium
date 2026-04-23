@@ -31,7 +31,7 @@ function Hero() {
           observer.disconnect();
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     if (visualRef.current) observer.observe(visualRef.current);
@@ -45,19 +45,28 @@ function Hero() {
         <div className="hero-content">
           <span className="hero-badge">
             <span className="badge-dot" />
-            DHMS Onis Product
+            DHMS Onis Premium
           </span>
 
           <h1>
-            Product Device Management for Secure, High&#8209;Performing Teams
+            Gain access to a network of technical
+            <br />
+            support staff members all across
+            <br />
+            Nigeria and Africa
           </h1>
 
           <p>
-            DHMS Product helps organizations manage devices, protect endpoints,
-            monitor teams, and reduce downtime from one intelligent platform.
+            Your staff members, remote and onsite, get 24/7 access to device
+            maintenance from a professional technician at no extra&nbsp;fees
           </p>
 
-          <a href="https://app.thedhms.com" className="hero-btn" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://app.thedhms.com"
+            className="hero-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Try DHMS Free
           </a>
         </div>
