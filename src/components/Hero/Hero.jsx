@@ -49,25 +49,24 @@ function Hero() {
           </span>
 
           <h1>
-            Gain access to a network of technical
-            <br />
-            support staff members all across
-            <br />
-            Nigeria and Africa
+            Gain access to preventive & on-time device fix from a network of professional Laptop and Desktop technicians across Nigeria and Africa
           </h1>
 
           <p>
-            Your staff members, remote and onsite, get 24/7 access to device
-            maintenance from a professional technician at no extra&nbsp;fees
+            Your staff members, remote and onsite, get access to 24/7
+            <br />
+            device maintenance on request, at no extra fees, no matter
+            <br />
+            the device issue
           </p>
 
           <a
-            href="https://app.thedhms.com"
+            href="https://thedhms.com/contact/"
             className="hero-btn"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Try DHMS Free
+            Request Onboarding
           </a>
         </div>
 

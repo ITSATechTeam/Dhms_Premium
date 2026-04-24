@@ -25,8 +25,8 @@ function CTA() {
           <a href="https://thedhms.com/contact" className="cta-btn cta-btn-outline" target="_blank" rel="noopener noreferrer">
             Contact us
           </a>
-          <a href="https://app.thedhms.com" className="cta-btn cta-btn-solid" target="_blank" rel="noopener noreferrer">
-            Try DHMS Free
+          <a href="https://thedhms.com/contact/" className="cta-btn cta-btn-solid" target="_blank" rel="noopener noreferrer">
+            Request Onboarding
           </a>
         </div>
       </div>

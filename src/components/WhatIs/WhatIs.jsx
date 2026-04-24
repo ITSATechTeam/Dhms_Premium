@@ -19,7 +19,7 @@ function WhatIs() {
             threats, and gives real-time insights to optimize IT operations. With 24/7 support and scalable features, it
             ensures your organization runs efficiently and securely.
           </p>
-          <a href="https://app.thedhms.com" className="whatis-btn" target="_blank" rel="noopener noreferrer">Try DHMS Free</a>
+          <a href="https://thedhms.com/contact/" className="whatis-btn" target="_blank" rel="noopener noreferrer">Request Onboarding</a>
         </div>
 
         <div ref={imageRef} className={`whatis-image-frame fade-up ${imageInView ? 'in-view' : ''}`} style={{ transitionDelay: '0.15s' }}>
